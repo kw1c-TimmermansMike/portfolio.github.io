@@ -1,0 +1,149 @@
+/*<
+Auteur: Mike/Daan
+    Aanmaakdatum: 29-03-2024
+
+    Omschrijving: Css Algemeen
+*/
+/* Algemene stijlen */
+/* Definieer aangepast lettertype */
+@font-face {
+    font-family: PlaypenSans;
+    src: url(../fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf);
+}
+
+/* Body stijlen */
+body {
+    font-family: 'PlaypenSans', Arial, sans-serif; /* Gebruik aangepast lettertype */
+    background-color: #f0f0f0; /* Achtergrondkleur */
+    margin: 0; /* Verwijder standaardmarges */
+    padding: 0; /* Verwijder standaardvullingen */
+    color: #333; /* Tekstkleur */
+}
+
+/* Stijlen voor het logo */
+.logo img {
+    width: 100px; /* Breedte van het logo-afbeelding */
+    height: 90px; /* Hoogte van het logo-afbeelding */
+    margin: 0; /* Verwijder standaardmarges */
+}
+
+/* Stijlen voor de voettekstsectie */
+footer {
+    background-color: #00a699; /* Achtergrondkleur van de voettekst */
+    color: white; /* Tekstkleur van de voettekst */
+    text-align: center; /* Centreer de tekst in de voettekst */
+    padding: 20px 0; /* Binnenste opvulling van de voettekst */
+}
+
+/* Header stijlen */
+header {
+    background-color: #00a699; /* Achtergrondkleur */
+    color: #fff; /* Tekstkleur */
+    padding: 20px 0; /* Binnenste opvulling */
+    text-align: center; /* Centreer tekst */
+}
+
+/* H2 stijlen */
+h2 {
+    text-align: center; /* Centreer tekst */
+}
+
+/* Paragraafstijlen */
+p {
+    font-size: 18px; /* Lettergrootte */
+    margin: 20px 0; /* Buitenste marges */
+    font-weight: bold; /* Vetgedrukte tekst */
+    text-align: center; /* Centreer tekst */
+}
+
+/* Navigatiestijlen */
+nav {
+    display: flex; /* Maak flex-container */
+    justify-content: space-between; /* Verdeel ruimte tussen items */
+    align-items: center; /* Centreer items verticaal */
+    max-width: 1200px; /* Maximale breedte */
+    margin: 0 auto; /* Centreer op pagina */
+    padding: 0 20px; /* Binnenste opvulling */
+}
+
+nav ul {
+    list-style: none; /* Verwijder opsommingstekens */
+    display: flex; /* Maak flex-container */
+}
+
+nav ul li {
+    margin: 0 15px; /* Buitenste marges */
+}
+
+nav ul li a {
+    text-decoration: none; /* Verwijder onderstreping van links */
+    color: #fff; /* Tekstkleur */
+    font-size: 24px; /* Lettergrootte */
+    transition: color 0.3s; /* Soepele overgang van tekstkleur */
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Tekstkleur bij zweven */
+}
+
+/* Knopstijlen */
+.knop {
+    background-image: url("../Images/background.jpg"); /* Achtergrondafbeelding */
+    background-size: cover; /* Afbeelding schalen om container te bedekken */
+    color: white; /* Tekstkleur */
+    text-align: center; /* Centreer tekst */
+    padding: 40px 0; /* Binnenste opvulling */
+}
+
+.knoplook {
+    display: inline-block; /* Maak inline-blok */
+    background-color: #ff0000; /* Achtergrondkleur */
+    color: #fff; /* Tekstkleur */
+    padding: 12px 24px; /* Binnenste opvulling */
+    border: none; /* Verwijder rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 18px; /* Lettergrootte */
+    text-decoration: none; /* Verwijder onderstreping */
+    transition: background-color 0.3s; /* Soepele overgang van achtergrondkleur */
+}
+
+.knoplook:hover {
+    background-color: #ff3333; /* Achtergrondkleur bij zweven */
+}
+
+/* Formulierstijlen */
+.enquête {
+    max-width: 600px; /* Maximale breedte */
+    margin: 0 auto; /* Centreer op pagina */
+    padding: 20px; /* Binnenste opvulling */
+    background-color: #fff; /* Achtergrondkleur */
+    border-radius: 4px; /* Afgeronde hoeken */
+}
+
+.enquête label {
+    display: block; /* Maak blokken */
+    margin-bottom: 10px; /* Onderste marge */
+    font-weight: bold; /* Vetgedrukte tekst */
+}
+
+.enquête input[type="radio"],
+.enquête input[type="checkbox"] {
+    margin-right: 10px; /* Rechtermarge */
+}
+
+.enquête button {
+    background-color: #ff0000; /* Achtergrondkleur */
+    color: #fff; /* Tekstkleur */
+    border: none; /* Verwijder rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    padding: 12px 24px; /* Binnenste opvulling */
+    font-size: 18px; /* Lettergrootte */
+    cursor: pointer; /* Cursorstijl */
+    transition: background-color 0.3s; /* Soepele overgang van achtergrondkleur */
+    display: block; /* Maak blokken */
+    margin-top: 20px; /* Bovenste marge */
+}
+
+.enquête button:hover {
+    background-color: #ff3333;
+}

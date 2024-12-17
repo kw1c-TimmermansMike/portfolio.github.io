@@ -1,0 +1,117 @@
+/*<
+Auteur: Mike/Daan
+    Aanmaakdatum: 29-03-2024
+
+    Omschrijving: Css results
+*/
+/* Definieer een aangepast lettertype genaamd PlaypenSans */
+@font-face {
+    font-family: PlaypenSans;
+    src: url(../fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf); /* Het pad naar het lettertypebestand */
+}
+
+/* Algemene stijlen voor de pagina */
+body {
+    font-family: 'PlaypenSans', Arial, sans-serif; /* Gebruik het aangepaste lettertype als hoofdlettertype */
+    background-color: #f0f0f0; /* Achtergrondkleur van de pagina */
+    margin: 0; /* Verwijder standaardmarges */
+    padding: 0; /* Verwijder standaardvullingen */
+    color: #333; /* Standaardtekstkleur */
+}
+
+/* Stijlen voor de headersectie */
+header {
+    background-color: #00a699; /* Achtergrondkleur van de header */
+    color: #fff; /* Tekstkleur van de header */
+    padding: 20px 0; /* Binnenste opvulling van de header */
+    text-align: center; /* Centreer de tekst in de header */
+}
+
+/* Stijlen voor de navigatiebalk */
+nav {
+    display: flex; /* Maak de navigatiebalk een flex-container */
+    justify-content: space-between; /* Verdeel de ruimte tussen de items */
+    align-items: center; /* Centreer de items verticaal */
+    max-width: 1200px; /* Maximale breedte van de navigatiebalk */
+    margin: 0 auto; /* Centreer de navigatiebalk op de pagina */
+    padding: 0 20px; /* Binnenste opvulling van de navigatiebalk */
+}
+
+nav ul {
+    list-style: none; /* Verwijder de standaardlijststijl */
+    display: flex; /* Maak de lijst een flex-container */
+}
+
+nav ul li {
+    margin: 0 15px; /* Ruimte tussen de navigatie-items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Verwijder standaardonderstreping van links */
+    color: #fff; /* Tekstkleur van de navigatielinks */
+    font-size: 24px; /* Lettergrootte van de navigatielinks */
+    transition: color 0.3s; /* Soepele overgang van tekstkleur */
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Tekstkleur van de navigatielinks bij zweven */
+}
+
+/* Stijlen voor de voettekstsectie */
+footer {
+    background-color: #00a699; /* Achtergrondkleur van de voettekst */
+    color: white; /* Tekstkleur van de voettekst */
+    text-align: center; /* Centreer de tekst in de voettekst */
+    padding: 20px 0; /* Binnenste opvulling van de voettekst */
+}
+
+/* Stijlen voor het logo */
+.logo img {
+    width: 100px; /* Breedte van het logo-afbeelding */
+    height: 90px; /* Hoogte van het logo-afbeelding */
+    margin: 0; /* Verwijder standaardmarges */
+}
+
+/* Mediaqueries voor responsiveness */
+@media screen and (max-width: 768px) {
+    /* Stijlen voor schermen met een maximale breedte van 768px */
+    header {
+        padding: 10px 0; /* Aangepaste binnenste opvulling voor kleinere schermen */
+    }
+
+    nav {
+        padding: 0; /* Verwijder de standaardopvulling van de navigatiebalk */
+        flex-direction: column; /* Stapel navigatie-items op in een kolom */
+        align-items: flex-start; /* Links uitlijnen van navigatie-items */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stapel lijstitems op in een kolom */
+        align-items: flex-start; /* Links uitlijnen van lijstitems */
+        width: 100%; /* Neem volledige breedte in beslag */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ruimte tussen gestapelde navigatie-items */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Aangepaste lettergrootte voor kleinere schermen */
+    }
+}
+
+/* Stijlen voor de hoofdinhoud */
+main {
+    max-width: 800px; /* Maximale breedte van de hoofdinhoud */
+    margin: 20px auto; /* Centreer de hoofdinhoud op de pagina */
+    background-color: #fff; /* Achtergrondkleur van de hoofdinhoud */
+    padding: 20px; /* Binnenste opvulling van de hoofdinhoud */
+    border-radius: 5px; /* Afgeronde hoeken van de hoofdinhoud */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Licht schaduweffect */
+}
+
+main p {
+    margin-bottom: 10px; /* Ruimte onder paragrafen */
+    font-weight: bolder; /* Vetgedrukte tekst */
+}
+

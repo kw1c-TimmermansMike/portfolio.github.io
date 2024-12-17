@@ -1,0 +1,378 @@
+@font-face {
+    font-family: Inter;
+    src: url("../Fonts/Inter-font/Inter Desktop/Inter-Black.otf");
+}
+
+html
+{
+    background-color: black;
+    font-family: Inter;
+}
+
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+    margin: -50px;
+}
+
+nav ul li a:hover
+{
+    color: #ff6f61;
+}
+
+nav ul li a::after
+{
+    display: block;
+    transition: width 0.3s;
+    position: absolute;
+    transform: translateX(-50%);
+
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+#home a
+{
+    color: red;
+}
+
+a
+{
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: white;
+}
+
+.footer
+{
+    text-align: center;
+    padding: 3px;
+    background-color: darkred;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: xxx-large;
+    font-weight: bolder;
+    z-index: 3;
+    height: 132px;
+
+}
+
+.naam
+{
+    display: block;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    line-height: 20px;
+    font-size:45px;
+    color: white;
+    margin-bottom: 200px;
+
+}
+
+#fot
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0.8;
+    width: 700px;
+    height:52vw;
+
+}
+
+h2
+{
+    display: block;
+    text-align: center;
+    z-index: 2;
+    line-height: 20px;
+    font-size:50px;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 11%;
+    width: 640px;
+    padding-right: 25px;
+}
+
+.text
+{
+    position: absolute;
+    right: 0;
+    top: 29%;
+    color: white;
+    width: 600px;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.text2
+{
+    position: absolute;
+    right: 0;
+    top: 44%;
+    color: white;
+    width: 600px;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+span
+{
+    color: red;
+}
+
+.icon
+{
+    position: absolute;
+    right: 0;
+    top: 77%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding-right: 330px;
+
+}
+
+.link1
+{
+    position: absolute;
+    right: 0;
+    top: 29%;
+    color: white;
+    width: 100px;
+    padding-right: 25px;
+    z-index: 2;
+    font-size: x-large;
+}
+
+.link2
+{
+    position: absolute;
+    right: 0;
+    top: 45%;
+    color: white;
+    width: 100px;
+    padding-right: 25px;
+    z-index: 2;
+    font-size: x-large;
+}
+
+.link3
+{
+    position: absolute;
+    right: 0;
+    top: 63%;
+    color: white;
+    width: 101px;
+    padding-right: 25px;
+    z-index: 2;
+    font-size: x-large;
+}
+
+#voorbeeld1
+{
+    position: absolute;
+    right: 0;
+    top: 34%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0.8;
+    width: 300px;
+    height:6vw;
+    padding-right: 150px;
+}
+
+#voorbeeld2
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0.8;
+    width: 300px;
+    height:6vw;
+    padding-right: 150px;
+}
+
+#voorbeeld3
+{
+    position: absolute;
+    right: 0;
+    top: 69%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0.8;
+    width: 300px;
+    height:6vw;
+    padding-right: 150px;
+}
+
+.contact-form
+{
+    background-color: #000;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    padding: 2%;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+}
+
+.contact-form h1
+{
+    color: #ff0000;
+    margin-bottom:20px;
+    font-size: xxx-large;
+}
+
+.contact-form p
+{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-form .highlight
+{
+    color: #ff0000;
+}
+
+.contact-form label
+{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.contact-form label::after
+{
+    content: ":";
+    color: #ff0000;
+}
+
+/* From Uiverse.io by garerim */
+.input
+{
+    margin: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(82, 2, 2);
+    color: #5b5656;
+}
+.contact-form textarea
+{
+    height: 90px;
+}
+
+.contact-form button
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover
+{
+    background-color: #cc0000;
+}
+
+/* From Uiverse.io by 0x-Sarthak */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 11.5px 18px;
+    transition: all 0.2s ease;
+    border: 3px solid #552da8;
+    border-radius: 10px;
+    background: #552da8;
+    cursor: pointer;
+
+}
+
+.cta:before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    border-radius: 10px;
+    background: #050505;
+    width: 45px;
+    height: 45px;
+    transition: all 0.8s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.5s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #1c1c1c;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+    transition: all 2s ease;
+}
+
+.cta:active
+{
+    transform: scale(0.95);
+    transition: all 2s ease;
+}
+
+.banner
+{
+    position: relative;
+    margin-left: auto;
+    height: auto;
+    color: #3a2c4d;
+
+}
+

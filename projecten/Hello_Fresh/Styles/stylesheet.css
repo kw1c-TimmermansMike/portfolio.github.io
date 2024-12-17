@@ -1,0 +1,206 @@
+/*<
+Auteur: Mike/Daan
+    Aanmaakdatum: 29-03-2024
+
+    Omschrijving: Css
+*/
+
+/* tekst style */
+@font-face {
+    font-family: PlaypenSans;
+    src: url(../fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf);
+}
+
+/* past de zij/boven kant aan van de gehele pagina */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* past de tekst style toe en achtergrond kleur */
+body {
+    font-family: PlaypenSans;
+    background-color: #f0f0f0;
+}
+
+/* past de achtergrondkleur / tekst kleur / en hoogte van de header aan  */
+header {
+    background-color: #00a699;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* past de nav aan  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* past de tabjes aan in de nav kleur grote en de kleur als je erover hovert */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+/* past de rode kleur toe als je erover hovert */
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* past de style aan van de tabjes in de nav  */
+ul {
+    list-style: none;
+    display: flex;
+}
+
+/* past de afstand van de tabjes aan in de nav  */
+li {
+    margin: 0 15px;
+}
+
+/* voegt een achtergrond kleur toe aan de knop */
+.knop {
+    background-image: url("../Images/background.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* grote van het h1 elemet ( tekst ) */
+h1 {
+    font-size: 36px;
+}
+
+/* past het p element aan grote dikte en kleur */
+p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* zorgt voor de look van de knop */
+.knoplook {
+    display: inline-block;
+    background-color: #ff0000; /* Knopachtergrondkleur veranderd naar rood */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* de lichte kleurs verandering als je over de knop gaat */
+.knoplook:hover {
+    background-color: #ff3333;
+}
+
+/* de grote van de images plaats en achtergrond kleur */
+.recept {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.images {
+    margin: 10px;
+}
+
+.images img {
+    max-width: 100%;
+}
+
+/* voegt achtergrond kleur toe aan de footer en centert te tekst */
+footer {
+    background-color: #00a699;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+/* plaatsing en grote van het logo */
+.logo img {
+    width: 100px;
+    height: 90px;
+    margin: 0px;
+}
+
+/* Media queries voor responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    /* vernaderd de nav van horizontaal naar verticaal */
+    nav {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .knop {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .knoplook {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .recept {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 72px;
+    }
+}

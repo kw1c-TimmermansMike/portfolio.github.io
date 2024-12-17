@@ -1,0 +1,158 @@
+    /*
+        Auteur: Mike Timmermans
+        Aanmaakdatum: 14-05-2024
+
+        Omschrijving: CSS-opmaak
+    */
+
+#mainContainer
+{
+    position: absolute;
+}
+
+#container1
+{
+    flex-flow: column;
+    column-count: 1;
+    position: relative;
+    top: 30vh;
+    float: left;
+    padding: 10px;
+    max-width: 40vw;
+}
+
+#container2
+{
+    flex-flow: column;
+    column-count: 1;
+    position: relative;
+    top: 30vh;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.circle
+{
+    border-radius: 40%;
+    background: rgb(204,0,51);
+    color: white;
+    padding: 5px;
+}
+
+main
+{
+    margin-left: 10vw;
+}
+
+h1
+{
+    color: #181818;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+h3
+{
+    font-size: 22px;
+    color: #181818;
+    font-family: sans-serif;
+}
+
+h4
+{
+    font-size: 16px;
+    color: #181818;
+    font-family: sans-serif;
+}
+
+button
+{
+    border-radius: 4px;
+    padding: 10px;
+}
+
+a
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #E60039;
+}
+
+.line
+{
+    border-bottom: #F9DC06 2px solid;
+}
+
+header
+{
+    padding: 20px 0;
+    position: fixed;
+    z-index: 2;
+    border-bottom: solid black 1px;
+}
+
+/* Zorgt ervoor dat de navigatie er goed uitziet */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+/* Verwijdert puntjes en lijnen decoratie van de navigatie */
+nav ul li a
+{
+    text-decoration: none;
+    color: #EA2455;
+    font-size: 24px;
+    transition: color 0.3s;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+}
+
+/* Creëert afstand tussen de opties in de navigatie */
+li
+{
+    margin: 0 15px;
+}
+
+img
+{
+    padding-right: 100px;
+}
+
+#stupid
+{
+    margin-top: 50vh;
+    margin-left: 35vw;
+}
+
+/* Footer opmaak */
+footer
+{
+    position: absolute;
+    bottom: 0;
+    background: #787878;
+    color: white;
+    width: 95vw;
+    height: 75px;
+    text-align: center;
+    margin-bottom: -200px;
+    margin-left: -172px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
